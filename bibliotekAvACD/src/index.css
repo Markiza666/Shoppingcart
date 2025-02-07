@@ -1,0 +1,104 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+img {
+  padding: .5rem;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 1.1rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h2 {
+  color: brown;
+  margin: auto 0 auto auto;
+}
+
+h4 {
+  font-size: .8rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p {
+  text-align: start;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+article {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 300px;
+  padding: 0 2rem 2rem 2rem;
+  text-align: center;
+}
+
+.bokTitel {
+  color: rgb(36, 24, 68);
+  margin-top: 2rem;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: #6bd6c8;
+  
+}
+
+button:hover {
+  border-color: #2e2f92;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #6bd6c8;
+  }
+}
