@@ -1,7 +1,10 @@
-import React from 'react';
+// import React from 'react';
 import './App.css';
-import Header from './components/Header/Header';
+import { Header } from './components/Header';
 import BookComponent from './components/Book';
+import Book from './components/Book'; // Importera Book-interfacet
+import { CartProvider } from './components/CartContext';
+
 
 interface Book {
   id: number;
@@ -19,14 +22,16 @@ const books: Book[] = [
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        {books.map(book => (
-          <BookComponent key={book.id} book={book} /> 
-        ))}
-      </main>
-    </div>
+      <CartProvider> {/* Wrap appen med CartProvider */}
+          <div className="App">
+              <Header />
+              <main>
+                  {books.map(book => (
+                      <BookComponent key={book.id} book={book} />
+                  ))}
+              </main>
+          </div>
+      </CartProvider>
   );
 }
 

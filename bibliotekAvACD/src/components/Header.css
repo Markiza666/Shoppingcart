@@ -1,0 +1,12 @@
+header {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+img {
+    padding: .5rem;
+    background-color: #ffffff;
+}
