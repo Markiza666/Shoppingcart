@@ -1,4 +1,22 @@
+.cart-container {
+    align-self: center;
+}
+
 h2 {
+    font-size: 1.1rem;
     color: brown;
     margin: auto 0 auto auto;
+}
+
+li {
+    color: #ffffff;
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    .cart-container {
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
 }

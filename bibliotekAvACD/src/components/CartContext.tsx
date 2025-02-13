@@ -5,14 +5,18 @@ import { Book } from './Book';
 
 export interface CartContextType {
     cart: Book[];
-    addToCart: (book: Book) => void;
+    addToCart: (book: Book) => void; 
 }
 
 export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [cart, setCart] = useState<Book[]>([]);
 
     const addToCart = (book: Book) => {
-        setCart([...cart, book]);
+        const productExists = cart.find(item => item.id === book.id); // Kontrollerar om produkten redan finns
+
+        if (!productExists) { // Lägg bara till produkten om den inte redan finns
+            setCart([...cart, book]);
+        }
     };
 
     return (

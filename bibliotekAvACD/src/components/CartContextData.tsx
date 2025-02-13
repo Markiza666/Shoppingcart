@@ -1,12 +1,8 @@
 import { createContext } from 'react';
-import { Book } from './Book'; // Import the Book interface
+import { CartContextType } from './CartContext';
 
-export interface CartContextType {
-    cart: Book[];
-    addToCart: (book: Book) => void;
-}
 
 export const CartContext = createContext<CartContextType>({
     cart: [],
-    addToCart: () => {},
+    addToCart: () => {}, 
 });
