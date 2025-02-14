@@ -1,6 +1,7 @@
 @import url('./components/Book.css');
 @import url('./components/Header.css');
 @import url('./components/Cart.css');
+/* @import url('./components/CartDropdown.css'); */
 
 
 * {
@@ -26,9 +27,7 @@ button {
   border-radius: 5px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
+  font: bold .8rem Arial; 
   cursor: pointer;
   transition: border-color 0.25s;
   background-color: #6bd6c8;
